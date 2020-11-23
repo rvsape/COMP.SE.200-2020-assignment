@@ -1,5 +1,6 @@
 // Temp file to test mocha and chai packages
-import { assert } from 'chai';
+import pkg from 'chai';
+const { assert } = pkg;
 
 describe("Top level test block", () => {
 
