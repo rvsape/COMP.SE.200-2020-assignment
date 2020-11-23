@@ -1,5 +1,9 @@
 // Temp file to test mocha and chai packages
+const server = require('../index')
 const assert = require('chai').assert
+const expect = require('chai').expect
+
+
 
 describe("Top level test block", () => {
 
@@ -24,8 +28,8 @@ describe("Top level test block", () => {
         });
     });
     
-    it("should return true", ()=>   {
-
-	})
+    it('should return a string', () => {
+        expect('dummy server for travis').to.equal('dummy server for travis');
+    });
 
 })
