@@ -14,3 +14,6 @@ Individuals who remove or modify the license file will also carry the consequenc
 
 # info
 Travis: https://travis-ci.com/github/rvsape/COMP.SE.200-2020-assignment
+Coveralls: https://coveralls.io/github/rvsape/COMP.SE.200-2020-assignment
+
+[![Coverage Status](https://coveralls.io/repos/github/rvsape/COMP.SE.200-2020-assignment/badge.svg?branch=main)](https://coveralls.io/github/rvsape/COMP.SE.200-2020-assignment?branch=main)
