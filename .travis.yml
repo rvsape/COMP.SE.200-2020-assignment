@@ -1,9 +1,12 @@
+# use a stable version of node
 language: node_js
 node_js:
   - "stable"
 
-script:
-  - npm install
+cache:
+  directories:
+    - "node_modules"
+
 
 after_success:
   - npm run coveralls
