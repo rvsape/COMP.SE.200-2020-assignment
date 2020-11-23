@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha --exit",
+    "test": "make test",
     "coveralls": "./node_modules/.bin/coveralls"
   },
   "author": "",
