@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - "stable"
 
-script: phantomjs testrunner.js
+script: phantomjs
 
 
 
