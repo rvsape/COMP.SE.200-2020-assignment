@@ -3,20 +3,7 @@ language: node_js
 node_js:
   - "stable"
 
-install:
-  - npm install phantomjs -g
-  - npm install -g mocha-phantomjs
-  - npm install -g gulp
-  - npm install -g bower
-  - npm install
-
-before_script:
-  - phantomjs --version
-  - mocha-phantomjs --version
-
-script:
-  - mocha-phantomjs out/test/index.html
-  - npm test
+script: phantomjs testrunner.js
 
 
 
