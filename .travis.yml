@@ -3,7 +3,9 @@ language: node_js
 node_js:
   - "stable"
 
-script: phantomjs
+script: 
+  - npm run coveralls
+  #phantomjs
 
 
 
