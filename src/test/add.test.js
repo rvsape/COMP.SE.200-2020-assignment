@@ -1,6 +1,6 @@
 import chai from "chai"
 import add from "../add.js"
-const expect = chai.expect
+var expect = chai.expect
 
 
 
