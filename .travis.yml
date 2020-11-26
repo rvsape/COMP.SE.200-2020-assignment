@@ -1,10 +1,11 @@
 language: node_js
 node_js:
   - 10
-addons:
-  chrome: stable
-before_script:
-  - npm run compile
+
+#addons:
+#  chrome: stable
+#before_script:
+#  - npm run compile
 
 after_success:
   - npm run coveralls
