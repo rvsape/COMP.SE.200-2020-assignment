@@ -9,4 +9,5 @@ before_script:
   - npm run compile
 
 script:
+  - npm run travis-test
   - npm run coveralls
