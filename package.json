@@ -7,8 +7,8 @@
   "scripts": {
     "test": "mocha **/*.test.js",
     "travis-test": "mocha lib/**/*.test.js",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-    "compile": "babel src -d lib"
+    "compile": "babel src -d lib",
+    "coveralls": "nyc --reporter=text mocha lib/**/*.test.js | coveralls"
   },
   "author": "",
   "license": "MIT",
@@ -25,6 +25,8 @@
     "chai": "^4.2.0",
     "coveralls": "^3.1.0",
     "mocha": "^8.1.3",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^15.1.0",
     "util.promisify": "^1.0.1"
   }
 }

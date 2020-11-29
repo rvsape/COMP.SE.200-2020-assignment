@@ -1,4 +1,7 @@
+sudo: false
+
 language: node_js
+
 node_js:
   - 10
 
@@ -6,7 +9,4 @@ before_script:
   - npm run compile
 
 script:
-  - npm run travis-test
-
-after_success:
   - npm run coveralls
