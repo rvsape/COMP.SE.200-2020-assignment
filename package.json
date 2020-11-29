@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "mocha **/*.test.js",
-    "travis-test": "mocha lib/**/*.test.js",
+    "travis-test": "nyc --reporter=html --reporter=text mocha lib/**/*.test.js",
     "compile": "babel src -d lib",
-    "coveralls": "nyc --reporter=text mocha lib/**/*.test.js | coveralls"
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": "",
   "license": "MIT",
