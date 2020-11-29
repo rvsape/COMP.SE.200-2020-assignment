@@ -12,6 +12,10 @@ const expect = chai.expect
 
 describe("Test case #4", () => {
     describe("isBuffer.js", () => {
+        it("should return false for empty array", () =>{
+            let testData = []
+            expect(isBuffer(testData)).to.equal(false)
+        });
         it("should return false for a non-buffer data", () =>{
             let testData = new Uint8Array(3)
             expect(isBuffer(testData)).to.equal(false)
@@ -62,6 +66,9 @@ describe("Test case #4", () => {
     })
 
     describe('isTypedArray.js', () => {
+        it("should return false for non-typed empty array", () => {
+            expect(isTypedArray([])).to.equal(false)
+        })
         it("should return false for non-typed array", () => {
             expect(isTypedArray([1,2,3])).to.equal(false)
         })
@@ -72,6 +79,12 @@ describe("Test case #4", () => {
     describe('isEmpty.js', () => {
         it('should return true for null', () => {
             expect(isEmpty(null)).to.equal(true)
+        })
+        it('should return true for true', () => {
+            expect(isEmpty(true)).to.equal(true)
+        })
+        it('should return true for 1', () => {
+            expect(isEmpty(1)).to.equal(true)
         })
         it("should return false for non-empty value (string)", () => {
             expect(isEmpty('abc')).to.equal(false)

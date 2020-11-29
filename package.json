@@ -10,6 +10,10 @@
     "compile": "babel src -d lib",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
+  "nyc": {
+    "include": [ "lib/**/*.js" ],
+    "exclude": [ "lib/.internal/**/*.js", "lib/test/**/*.js"]
+  },
   "author": "",
   "license": "MIT",
   "dependencies": {
