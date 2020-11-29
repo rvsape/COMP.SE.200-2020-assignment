@@ -12,7 +12,7 @@
   },
   "nyc": {
     "include": [ "lib/**/*.js" ],
-    "exclude": [ "lib/.internal/**/*.js"]
+    "exclude": [ "lib/.internal/**/*.js", "lib/test/**/*.js"]
   },
   "author": "",
   "license": "MIT",
