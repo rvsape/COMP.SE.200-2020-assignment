@@ -57,7 +57,7 @@ describe("Test case #5", () => {
             expect(capitalize("milk")).to.equal("Milk")
         });
 
-        it("should converts the first character of `string` to upper case and the remaining with lower case", () =>{
+        it("should converts the first character of `string` to upper case and the remaining with lower case", () => {
             expect(capitalize("MILK")).to.equal("Milk")
         });
 
