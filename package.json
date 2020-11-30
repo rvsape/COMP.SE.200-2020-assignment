@@ -8,7 +8,7 @@
     "test": "mocha **/*.test.js",
     "test-watch": "nodemon --exec \"npm test\"",
     "compile": "babel src -d lib",
-    "travis-test": "nyc --reporter=text mocha lib/**/*.test.js",
+    "travis-test": "nyc --reporter=html --reporter=text mocha lib/**/*.test.js",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "nyc": {
