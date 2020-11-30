@@ -11,8 +11,12 @@
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "nyc": {
+    "include": [
+      "src/**/*.js"
+    ],
     "exclude": [
-      ".internal/**/*.js"
+      ".internal/**/*.js",
+      "test/**/*.js"
     ]
   },
   "author": "",
