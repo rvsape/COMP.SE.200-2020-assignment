@@ -5,14 +5,19 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha **/*.test.js",
-    "travis-test": "nyc --reporter=html --reporter=text mocha lib/**/*.test.js",
+    "test": "mocha --require @babel/register src/test/**/*.test.js",
+    "travis-test": "nyc --reporter=text mocha --require @babel/register src/test/**/*.test.js",
     "compile": "babel src -d lib",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "nyc": {
-    "include": [ "lib/**/*.js" ],
-    "exclude": [ "lib/.internal/**/*.js", "lib/test/**/*.js"]
+    "include": [
+      "lib/**/*.js"
+    ],
+    "exclude": [
+      "lib/.internal/**/*.js",
+      "lib/test/**/*.js"
+    ]
   },
   "author": "",
   "license": "MIT",
