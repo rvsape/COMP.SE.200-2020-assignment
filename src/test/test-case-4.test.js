@@ -87,8 +87,8 @@ describe("Test case #4", () => {
         it("should return false for string", () => {
             expect(isTypedArray('123123')).to.equal(false)
         })
-        it("should return true for Array", () => {
-            expect(isTypedArray(new Array())).to.equal(true)
+        it("should return false for Array", () => {
+            expect(isTypedArray(new Array())).to.equal(false)
         })
     })
     describe('isEmpty.js', () => {
