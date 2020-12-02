@@ -27,6 +27,10 @@ describe("Test case #5", () => {
         it("should return `false` when `value` is not a symbol", () =>{
             expect(isSymbol("123")).to.equal(false)
         });
+
+        it("should return `false` for empty object", () =>{
+            expect(isSymbol({})).to.equal(false)
+        });
         
     })
 
