@@ -75,6 +75,21 @@ describe("Test case #4", () => {
         it("should return true for typed array", () => {
             expect(isTypedArray(new Uint8Array([1,2,3]))).to.equal(true)
         })
+        it("should return false for ArrayBuffer", () => {
+            expect(isTypedArray(new ArrayBuffer(16))).to.equal(false)
+        })
+        it("should return false for object", () => {
+            expect(isTypedArray({'test': '123'})).to.equal(false)
+        })
+        it("should return false for int", () => {
+            expect(isTypedArray(123123)).to.equal(false)
+        })
+        it("should return false for string", () => {
+            expect(isTypedArray('123123')).to.equal(false)
+        })
+        it("should return true for Array", () => {
+            expect(isTypedArray(new Array())).to.equal(true)
+        })
     })
     describe('isEmpty.js', () => {
         it('should return true for null', () => {
@@ -95,7 +110,7 @@ describe("Test case #4", () => {
         it("should return true for empty value (Map)", () => {
             expect(isEmpty(new Map())).to.equal(true)
         })
-        
+
     })
     
 
