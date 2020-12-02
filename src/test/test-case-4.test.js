@@ -92,6 +92,10 @@ describe("Test case #4", () => {
         it("should return false for non-empty value (object)", () => {
             expect(isEmpty({'a': 1})).to.equal(false)
         })
+        it("should return true for empty value (Map)", () => {
+            expect(isEmpty(new Map())).to.equal(true)
+        })
+        
     })
     
 
