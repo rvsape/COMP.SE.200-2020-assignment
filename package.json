@@ -17,10 +17,9 @@
     ],
     "exclude": [
       ".internal/**/*.js",
-      "test/**/*.js",
-      "src/slice.js",
-      "src/keys.js"
-    ]
+      "test/**/*.js"
+    ],
+    "all": true
   },
   "author": "",
   "license": "MIT",
