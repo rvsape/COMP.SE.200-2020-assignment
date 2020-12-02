@@ -18,8 +18,6 @@
     "exclude": [
       ".internal/**/*.js",
       "test/**/*.js",
-      "src/slice.js",
-      "src/keys.js"
     ],
     "all": true
   },
