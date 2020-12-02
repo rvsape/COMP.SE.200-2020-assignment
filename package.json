@@ -20,7 +20,8 @@
       "test/**/*.js",
       "src/slice.js",
       "src/keys.js"
-    ]
+    ],
+    "all": true
   },
   "author": "",
   "license": "MIT",
