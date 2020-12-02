@@ -54,6 +54,9 @@ describe("Test case #5", () => {
         it("should preserve the string value when value is string", () =>{
             expect(toString("milk")).to.equal("milk")
         });
+        it("should return empty string for Symbol", () => {
+            expect(toString(Symbol.iterator)).to.equal("")
+        })
     })
     
     describe("capitalize.js", () => {
