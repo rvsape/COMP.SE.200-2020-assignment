@@ -24,8 +24,9 @@ Setup: npm i
 Run mocha tests: npm test
 
 Run mocha tests with mochawesome-reporting: 
-1. npm run test-with-report
-2. npm run open-report
+- npm run test-with-report
+Open mochawesome-report
+- npm run open-report
 
 Run tests and get Istanbul-coverage report:
 - npm run travis-test
